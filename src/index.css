@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@200;400&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&display=swap');
 :root {
+  /* Fontes desejadas */
   --font-title: 'Cormorant Garamond', serif;
   --font-family: 'Poppins', sans-serif;
   --font-menu: 'Quicksand', sans-serif;
   line-height: 1.5;
 
   --primary_color: rgb(255, 148, 120);
-  --secondary_color: rgb(114, 219, 196);
+  --secondary_color: rgb(250, 250, 250);
   --bkg_color: rgb(225, 204, 190);
-  --bkg_color_menu: #daddd9;
+  --bkg_color_menu: #d8d8bd;
   --dark:rgb(47, 48, 43);
   
   text-rendering: optimizeLegibility;
@@ -17,14 +18,27 @@
   -webkit-text-size-adjust: 100%;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 a {
   font-family: var(--font-menu);
   font-size: 1.6rem;
   color: var(--dark);
-  text-decoration: inherit;
+  text-decoration: none;
+  line-height: 2;
+  transition: all 0.5s ease-out;
 }
 a:hover {
   color: var(--secondary_color);
+  text-shadow: 2px 2px 5px var(--dark);
+  
 }
 
 body {
@@ -46,6 +60,8 @@ h1 {
   font-family: var(--font-title);
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--secondary_color);
+  text-shadow: 2px 2px 5px var(--dark);
 }
 p{
   font-size: 1.7rem;

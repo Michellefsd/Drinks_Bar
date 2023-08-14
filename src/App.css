@@ -6,12 +6,16 @@
 }
 /* Img principal */
 .hero {
-  height: 90vh;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat center/80% url("../public/img/cottonbro.jpg");
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
-.back-img-hero{
 
-}
 .nav {
   display: flex;
   flex-direction: row;
